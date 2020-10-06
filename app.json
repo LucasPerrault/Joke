@@ -4,11 +4,11 @@
     "slug": "joke",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/mobil/icon/joke.png",
     "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "image": "./assets/mobil/splashscreen/joke.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#F2F2F2"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -20,7 +20,7 @@
       "supportsTablet": true
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/web/icon/joke.png"
     }
   }
 }
