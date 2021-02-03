@@ -1,9 +1,25 @@
 import React from 'react';
-import Navigation from "./app/src/components/navigation/navigation";
+import Carousel from "./app/src/components/carousel/carousel";
+import {Dimensions, StatusBar, StyleSheet, View} from "react-native";
 
 
-export default function App() {
-  return (
-      <Navigation/>
-  );
+const App = () => {
+    const { height: windowHeight } = Dimensions.get("window");
+
+    return (
+        <View style={{ height: windowHeight, ...styles.fullScreen}}>
+            <StatusBar translucent />
+            <Carousel/>
+        </View>
+    );
 }
+
+const styles = StyleSheet.create({
+    fullScreen: {
+        position: "absolute",
+        top: 0,
+        backgroundColor: "red"
+    },
+});
+
+export default App;
